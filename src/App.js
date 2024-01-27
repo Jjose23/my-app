@@ -8,7 +8,7 @@ function App(){
                 <NavBar titulo="Mi Tienda"/>
             </header>
             <main>
-                <ItemListContainer texto="Bienvenido a mi Tienda en Línea" />
+                <ItemListContainer texto="Bienvenid@ a mi Tienda en Línea" />
             </main>
         </div>
     )
