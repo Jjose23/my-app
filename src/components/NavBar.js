@@ -13,7 +13,7 @@ function NavBar({titulo}){
             <CartWidget/>
             </div>
             </nav>  
-        
+
         
     )
 }
