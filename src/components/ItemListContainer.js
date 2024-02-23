@@ -9,7 +9,7 @@ function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   
   // Define la categoría actual para mostrar en el texto
-  const categoriaActual = categoria ? categoria.charAt(0).toUpperCase() + categoria.slice(1) : "Todos los productos";
+  const categoriaActual = categoria ? categoria.charAt(0).toUpperCase() + categoria.slice(1) : "All Products";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,7 +47,7 @@ function ItemListContainer() {
               price={producto.price + " USD"}
             />
             <Link to={`producto/${producto.id}`} className="btn btn-info">
-              +Info
+              More Detail
             </Link>
           </div>
         ))}

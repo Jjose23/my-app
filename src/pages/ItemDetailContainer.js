@@ -27,7 +27,7 @@ function ItemDetailContainer() {
 
   if (!producto) {
     
-    return <div>Cargando producto...</div>;
+    return <div>Loading products...</div>;
   }
 
   const { image, title, alt, price, description } = producto;
@@ -43,7 +43,7 @@ function ItemDetailContainer() {
         info={description}
       />
       <Link to="/" className="btn btn-info">
-        Volver a la lista de productos
+        Go Back
       </Link>
     </div>
 

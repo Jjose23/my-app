@@ -1,5 +1,6 @@
 /* CardItem.css */
 .card {
+    width: 400px;
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
@@ -7,8 +8,9 @@
   }
   
   .card img {
-    max-width: 100%;
-    height: auto;
+    width: 14rem;
+    height: 200px;
+    
   }
   
   .btn {
