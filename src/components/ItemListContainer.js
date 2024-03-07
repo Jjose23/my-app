@@ -1,7 +1,7 @@
 import "./ItemListContainer.css"
 import React, { useState, useEffect } from "react";
 import CardItem from "./CardItem";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { obtenerProducts } from "../asyncMock";
 
 function ItemListContainer() {
@@ -35,7 +35,7 @@ function ItemListContainer() {
   return (
     <main className="containerGeneral">
       <span className="fs-3">{categoriaActual}</span>
-      <div>
+      <div className="prueba">
         {productos.map((producto) => (
           
           <div key={producto.id} className="card-container">
@@ -45,10 +45,9 @@ function ItemListContainer() {
               alt={producto.description}
               title={producto.title}
               price={producto.price + " USD"}
+              id={producto.id}
             />
-            <Link to={`producto/${producto.id}`} className="btn btn-info">
-              More Detail
-            </Link>
+            
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import {  useParams   } from "react-router-dom";
 import { obtenerProducts } from "../asyncMock";
 import CardItem from "../components/CardItem";
 import "./ItemDetailContainer.css"
@@ -8,6 +8,7 @@ import "./ItemDetailContainer.css"
 function ItemDetailContainer() {
   const { id } = useParams();
   const [producto, setProducto] = useState(null);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,8 +32,11 @@ function ItemDetailContainer() {
   }
 
   const { image, title, alt, price, description } = producto;
+  
+
 
   return (
+    
     <main className="containerGeneral">
       <div className="producto">
       <CardItem
@@ -41,13 +45,13 @@ function ItemDetailContainer() {
         title={title}
         price={price + " USD"}
         info={description}
+        id={'/'}
       />
-      <Link to="/" className="btn btn-info">
-        Go Back
-      </Link>
+      
     </div>
 
     </main>
+    
     
   );
 }

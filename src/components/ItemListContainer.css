@@ -24,8 +24,21 @@
     align-items: center;
     margin-bottom: 20px;
     width: 330px;
+    
   }
   .card{
     display: flex;
     align-items: center;
+    
+  }
+  .card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 70px; /* ajusta según sea necesario */
+  }
+  .prueba{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
