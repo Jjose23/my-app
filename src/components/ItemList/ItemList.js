@@ -1,10 +1,10 @@
-import "./ItemListContainer.css"
+import "./ItemList.css"
 import React, { useState, useEffect } from "react";
-import CardItem from "./CardItem";
+import CardContext from "../CardContext/CardContext";
 import { useParams } from "react-router-dom";
-import { obtenerProducts } from "../asyncMock";
+import { obtenerProducts } from "../../asyncMock";
 
-function ItemListContainer() {
+function ItemList() {
   const { categoria } = useParams();
   const [productos, setProductos] = useState([]);
   
@@ -39,7 +39,7 @@ function ItemListContainer() {
         {productos.map((producto) => (
           
           <div key={producto.id} className="card-container">
-            <CardItem
+            <CardContext
               key={producto.id}
               image={producto.image}
               alt={producto.description}
@@ -55,4 +55,4 @@ function ItemListContainer() {
   );
 }
 
-export default ItemListContainer;
+export default ItemList;

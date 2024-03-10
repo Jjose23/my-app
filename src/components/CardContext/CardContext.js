@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./CardItem.css";
 
-function CardItem({ image, alt, title, price, info, id }) {
-  const backButton = id === '/' ? "Volver" : "More Details";
+import { Link } from "react-router-dom";
+import "./CardContext.css";
+
+function CardContext({ image, alt, title, price, info, id }) {
+  const backButton = id === '/' ? "Go Back" : "More Details";
 
   return (
     <div className="card">
@@ -26,4 +26,4 @@ function CardItem({ image, alt, title, price, info, id }) {
   );
 }
 
-export default CardItem;
+export default CardContext;

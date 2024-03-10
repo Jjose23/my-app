@@ -1,59 +1,12 @@
-import React, { useState, useEffect } from "react";
-import {  useParams   } from "react-router-dom";
-import { obtenerProducts } from "../asyncMock";
-import CardItem from "../components/CardItem";
-import "./ItemDetailContainer.css"
+import ItemDetail from "../components/ItemDetail/ItemDetail";
 
-
-function ItemDetailContainer() {
-  const { id } = useParams();
-  const [producto, setProducto] = useState(null);
-  
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const productos = await obtenerProducts();
-        const productoEncontrado = productos.find(
-          (producto) => producto.id === parseInt(id)
-        );
-        setProducto(productoEncontrado);
-      } catch (error) {
-        console.error("Error al obtener productos:", error);
-      }
-    };
-
-    fetchData();
-  }, [id]);
-
-  if (!producto) {
-    
-    return <div>Loading products...</div>;
-  }
-
-  const { image, title, alt, price, description } = producto;
-  
-
-
-  return (
-    
-    <main className="containerGeneral">
-      <div className="producto">
-      <CardItem
-        image={image}
-        alt={alt}
-        title={title}
-        price={price + " USD"}
-        info={description}
-        id={'/'}
-      />
-      
-    </div>
-
-    </main>
-    
-    
-  );
+function ItemDetailContainer(){
+    return(
+        <div>
+            <ItemDetail/>
+        </div>
+    )
 }
+
 
 export default ItemDetailContainer;

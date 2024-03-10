@@ -1,8 +1,16 @@
+
 .producto{
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

@@ -1,4 +1,4 @@
-/* ItemListContainer.css */
+
 .containerGeneral {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
   .card-title {
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 70px; /* ajusta según sea necesario */
+    height: 28px;
   }
   .prueba{
     display: flex;

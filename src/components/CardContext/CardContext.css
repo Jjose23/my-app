@@ -1,0 +1,62 @@
+/* CardContext.css */
+.card {
+  display: flex;
+  flex-direction: column;
+    width: 300px;
+    max-height: 1200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 11rem;
+    height: 150px;
+    
+  }
+
+  .miBtn{
+    
+    font-size:x-large;
+    color: #4caf50;
+    
+    &:hover{
+      color: #0dcaf0;
+
+    }
+  }
+  .compra{
+    border: none;
+    background: transparent;
+    margin-bottom: 10px;
+  }
+  .compra-cart{
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+
+  }
+  .bi-cart-plus{
+    font-size:x-large;
+    color: white;
+  }
+  
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 35px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
