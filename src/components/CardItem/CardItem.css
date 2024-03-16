@@ -1,4 +1,4 @@
-/* CardContext.css */
+
 .card {
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 
     }
   }
-  .compra{
+  .btn-cant{
     border: none;
     background: transparent;
     margin-bottom: 10px;

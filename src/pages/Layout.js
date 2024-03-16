@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 function Layout(){
     return (
         <div>
-            <NavBar titulo="Mi Tienda"/>
+            <NavBar titulo="My Store"/>
             <Outlet/>
             
         </div>

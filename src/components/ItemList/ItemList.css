@@ -8,6 +8,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
   }
   
   .fs-3 {
@@ -36,7 +37,7 @@
     text-overflow: ellipsis;
     height: 28px;
   }
-  .prueba{
+  .Subcontainer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;

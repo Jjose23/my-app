@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import CardtWidget from "./CardWidget";
+import CartWidget from "./CartWidget/CartWidget";
 
-
-
-
+// mi componente NavBar
 function NavBar({titulo}){
     return(
         <header>
@@ -13,7 +11,7 @@ function NavBar({titulo}){
             <Link to="categoria/electronics" className="text-decoration-none fs-5">Electronics</Link>
             <Link to="categoria/jewelery" className="text-decoration-none fs-5">Jewelery</Link>
             <Link to="categoria/men's clothing" className="text-decoration-none fs-5">Clothing</Link>
-            <CardtWidget/>
+            <CartWidget/>
             
             </div>
             </nav>  
